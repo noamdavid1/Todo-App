@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body onload="onInit()">
+    <section class="todo-filter">
+        <h2>Filter</h2>
+        <select class="filter-todo-select" onchange="onSetFilter({isDone: this.value == 'all' ? null : this.value == 'done' ? true : false})">
+            <option value="all">All Todos you have</option>
+            <option value="active">Active</option>
+            <option value="done">Done</option>
+        </select>
+    </section>
+    <section class="todos-container">
+    </section>
+    <input type="text" id="todo-input" placeholder="Add Something">
+    <button onclick="onAddTodo()">Add</button>
+
+    <section class="todos-counter">
+        <h2 id="total">Total Todos:<span></span></h2>
+        <h2 id="active">Active:<span></span></h2>
+    </section>
+
+    <script src="js/util.service.js"></script>
+    <script src="js/storage.service.js"></script>
+    <script src="js/Todo.services.js"></script>
+    <script src="js/Todo.controller.js"></script>
+</body>
+</html>

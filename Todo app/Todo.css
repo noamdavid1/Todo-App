@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(174, 212, 199);
+}
+
+.todo-filter{
+    background-color: rgb(151, 189, 212);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.alltodos {
+    list-style-type: disc; 
+    padding-left: 20px; 
+}
+
+.todo-item.done{
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.todo-item{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    display: list-item;
+    cursor: pointer;
+}
+
+
+.todo-item button {
+    padding: 3px 6px; 
+    font-size: 14px; 
+}
+
+.todos-counter{
+    background-color: rgb(147, 146, 146);
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+}
+
